@@ -33,8 +33,7 @@ class BubbleSort {
              }
              this.currentIndex++;
          } else {
-             this.bubbleCurrentStart++;
-             this.currentIndex = this.bubbleCurrentStart;
+             this.currentIndex = 0;
          }
      }
 }

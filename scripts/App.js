@@ -39,14 +39,16 @@ class App {
 
     setupEntities() {
         let entityNum = 256;
+        let colorScale = 1;
         if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
             // is mobile
-            entityNum = 128;
+            entityNum = 64;
+            colorScale = 4;
         }
 
         let entity;
         for (let i = 0; i < entityNum; i++) {
-            entity = new Entity("e-" + i, this.normalize(i, 0, 256) * 100, i);
+            entity = new Entity("e-" + i, this.normalize(i, 0, 256) * 100, i * colorScale);
             $(".display-area.bubble-sort").append(`<div class="entity ${entity.id}"></div>`);
             $(".display-area.insertion-sort").append(`<div class="entity ${entity.id}"></div>`);
             $(".display-area.quick-sort").append(`<div class="entity ${entity.id}"></div>`);
