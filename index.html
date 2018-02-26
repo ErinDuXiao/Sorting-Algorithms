@@ -1,33 +1,63 @@
 <!DOCTYPE html>
 <!--
-Media Player
+Sorting algorism visualization
 * @copyright: Erin Du
 * @author: Erin Du
 -->
 <html>
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	    <title>Media Player</title>
+	    	<title>Sort Visualization</title>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css" integrity="sha256-BJ/G+e+y7bQdrYkS2RBTyNfBHpA9IuGaPmf9htub5MQ=" crossorigin="anonymous" />
+		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
 		<link rel='stylesheet' href='css/style.css'>
 	</head>
-    <body>
+	<body>
+		<header>
+			<h1>Sorting Algorithms</h1>
+		</header>
+		<section>
 
+			<ul>
+				<li>
+					<h2>Bubble Sort</h2>
+					<div class="bubble-sort display-area">
+						<!-- <div id="" class="entity"></div> -->
+					</div>
+				</li>
+				<li>
+					<h2>Insertion Sort</h2>
+					<div class="insertion-sort display-area">
+						<!-- <div id="" class="entity"></div> -->
+					</div>
+				</li>
+				<li>
+					<h2>Quick Sort</h2>
+					<div class="quick-sort display-area">
+						<!-- <div id="" class="entity"></div> -->
+					</div>
+
+				</li>
+
+			</ul>
+		</section>
 
 		<section id="scripts">
-			<!-- import libraries -->
-			<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
-			<script
-			  src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"
-			  integrity="sha256-0YPKAwZP7Mp3ALMRVB2i8GXeEndvCq3eSl/WsAl1Ryk="
-			  crossorigin="anonymous"></script>
-			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js"></script>
+				<!-- import libraries -->
+				<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+				<script
+				  src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"
+				  integrity="sha256-0YPKAwZP7Mp3ALMRVB2i8GXeEndvCq3eSl/WsAl1Ryk="
+				  crossorigin="anonymous"></script>
+				<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js"></script>
 
-			<!-- my JavaScripts -->
-			<script src='scripts/PrivateData.js' type="text/javascript" defer></script>
-			<script src='scripts/Product.js' type="text/javascript" defer></script>
-			<script src='scripts/App.js' type="text/javascript" defer></script>
+				<!-- my JavaScripts -->
+				<script src='scripts/Entity.js' type="text/javascript" defer></script>
+				<script src='scripts/InsertionSort.js' type="text/javascript" defer></script>
+				<script src='scripts/BubbleSort.js' type="text/javascript" defer></script>
+				<script src='scripts/QuickSort.js' type="text/javascript" defer></script>
+				<script src='scripts/App.js' type="text/javascript" defer></script>
 
 		</section>
 	</body>
